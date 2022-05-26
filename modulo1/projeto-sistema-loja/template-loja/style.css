@@ -1,0 +1,22 @@
+header{
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    text-align: center;
+    width: auto;
+    height: auto;
+    border-style: solid;
+    background-color:beige;
+    color:rgb(164, 148, 110);
+    margin: 35px;
+    
+    
+}
+
+
+#principal{
+    color:rgb(164, 148, 110);
+    
+}
+#titulo{
+    color:rgb(164, 148, 110);
+
+}
