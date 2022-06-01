@@ -1,0 +1,52 @@
+header {
+    background-color: orange;
+    width: auto;
+    height: 2cm;
+}
+
+#cabecalho {
+    font-size: 250%;
+
+
+}
+
+#buscar {
+    float: right;
+    margin-top: 0.5cm;
+
+    height: 0.7cm;
+
+}
+
+.container-videos {
+    display: grid;
+    padding: 10px;
+    grid-template: auto auto / auto auto auto auto;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    text-align: center;
+    border: 2cm black;
+    background-color: antiquewhite;
+
+
+}
+
+.galeria {
+
+    width: 300px;
+    height: 300px;
+    padding: 5px;
+    text-align: center;
+
+
+}
+
+footer {
+    background-color: rgb(122, 122, 117);
+    text-align: center;
+}
+
+.container-videos1 {
+    display: grid;s
+    align-items: center;
+}
