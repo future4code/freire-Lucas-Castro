@@ -1,0 +1,82 @@
+header {
+    background-color: orange;
+    display:grid;
+    grid-template-columns: auto auto;
+    
+
+}
+
+#cabecalho {
+    font-size: 250%;
+}
+
+
+
+.buscar{
+    text-align: left;
+    width:30vh;
+}
+
+p{
+    text-align: right;
+    
+    
+    
+
+}
+   
+
+
+.container-videos {
+    display: grid;
+    padding: 10px;
+    grid-template: auto auto / auto auto auto auto;
+    text-align: center;
+    background-color: antiquewhite;
+
+
+}
+
+article{
+    margin: 5px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1px;
+    border-radius: 20px;
+    
+
+
+}
+video{ 
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: block;
+    width: 100%;
+    height: 90%;
+}
+
+
+
+
+footer {
+    margin: 10px;
+    background-color: orange;
+    padding:5px;  
+    text-align: center;
+    height: auto;
+    font-size: 150%;
+}
+
+.desc-video{
+display:block;
+text-align: center;
+font-size:150%;
+
+}
+.container-videos1 {
+    width:50%;
+    height:50%;
+    margin:auto;
+}
