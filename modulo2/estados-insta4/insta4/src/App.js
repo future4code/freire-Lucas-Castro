@@ -10,31 +10,60 @@ const MainContainer = styled.div`
 `
 
 class App extends React.Component {
-  render() {
-    return (
-      <MainContainer>
-        <Post
-          nomeUsuario={'paulinha'}
-          fotoUsuario={'https://picsum.photos/50/50'}
-          fotoPost={'https://picsum.photos/200/150'}
-        />
+  state = {
+    posts:[
+      {
+          nomeUsuario:'paulinha',
+          fotoUsuario:'https://picsum.photos/50/50',
+          fotoPost:'https://picsum.photos/200/150'
+      },
+      {
+          nomeUsuario:'leticia',
+          fotoUsuario:'https://picsum.photos/50/49',
+           fotoPost:'https://picsum.photos/200/149'
+      },
+        {
+          nomeUsuario:'gabriel',
+          fotoUsuario:'https://picsum.photos/50/48',
+          fotoPost:'https://picsum.photos/200/148'
+        }
+    ],
+    }
 
-        <Post
-          nomeUsuario={'neymarjr'}
-          fotoUsuario={'https://picsum.photos/50/49'}
-          fotoPost={'https://picsum.photos/200/149'}
-        />
+    adicionarPost = () => {
+      let novoPost= {
+        nomeUsuario: this.state.nomeUsuario,
+        fotoUsuario:this.state.fotoUsuario,
+        fotoPost: this.state.fotoPost
+      }
+      let copiaListaDePost = [...this.state.posts, novoPost]
+      this.setState({post:copiaListaDePost})
+    }
+    onChangeInputNomeUsuario = (nome)=>{
+      this.setState({nomeUsuario: nome.target.value})
+    }
+    onChangeInputFotoUsuario = (foto)=>{
+      this.setState({nomeUsuario: foto.target.value})
+    }
+    onChangeInputFotoPost = (post)=>{
+      this.setState({nomeUsuario: post.target.value})
+    }
 
-        <Post
-          nomeUsuario={'anitta'}
-          fotoUsuario={'https://picsum.photos/50/48'}
-          fotoPost={'https://picsum.photos/200/148'}
-        />
-      </MainContainer>
+    render() {
+      let listaDePosts = this.state.posts.map((posts)=>{
+        return (
+          <Post
+          nomeUsuario={post.nomeUsuario}
+          fotoUsuario={post.fotoUsuario}
+          fotoPost={post.fotoPost}/>
+        )
+      })
 
-      
-    );
+    }
+
+    
+
+
+
   }
-}
-
 export default App;
