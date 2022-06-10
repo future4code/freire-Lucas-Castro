@@ -8,6 +8,13 @@ const MainContainer = styled.div`
   flex-direction: column;
   align-items: center;
 `
+const Post = styled.div`
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+  
+`
 
 class App extends React.Component {
   state = {
