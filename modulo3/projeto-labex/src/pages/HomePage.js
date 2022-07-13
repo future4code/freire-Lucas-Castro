@@ -8,8 +8,8 @@ export const HomePage = () =>{
         navigate("/trips/list")
     }
 
-    const goToAdminHomePage = () =>{
-        navigate("/admin/trips/list")
+    const goToLoginPage = () =>{
+        navigate("/login")
     }
 
     
@@ -18,7 +18,7 @@ export const HomePage = () =>{
         <div>
             <h1>HomePage</h1>
             <button onClick={goToListTripsPage}>Ver Viagens</button>
-            <button onClick={goToAdminHomePage}>Área de Admin</button>
+            <button onClick={goToLoginPage}>Área de Admin</button>
         </div>
     )
 
