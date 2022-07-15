@@ -18,7 +18,8 @@ export const LoginPage = () => {
         setPassword(event.target.value)
     };
 
-    const onSubmitLogin = () => {
+    const onSubmitLogin = (event) => {
+        event.preventDefault()
         console.log(email, password);
         const body = {
             email: email,
@@ -38,19 +39,25 @@ export const LoginPage = () => {
     return (
         <div>
             <h1>LoginPage</h1>
+            <form onSubmit={onSubmitLogin}>
             <input
                 placeholder="email"
                 type="email"
                 value={email}
                 onChange={onChangeEmail}
+                required
             />
             <input
                 placeholder="password"
                 type="password"
                 value={password}
                 onChange={onChangePassword}
+                pattern={"^.{3,}"}
+                title={"Sua senha deve ter no mínimo 3 caracteres!"}
+                required
             />
-            <button onClick={onSubmitLogin}>Enviar</button>
+            <button>Enviar</button>
+            </form>
         </div>
     )
 
