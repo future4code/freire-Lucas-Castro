@@ -1,1 +1,1 @@
-//# sourceMappingURL=exerc8.js.map
+"use strict";
